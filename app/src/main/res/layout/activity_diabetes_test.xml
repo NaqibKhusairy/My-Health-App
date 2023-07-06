@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diabetesTestActivity">
+    <RadioGroup
+        android:id="@+id/rgSelection"
+        android:layout_width="218dp"
+        android:layout_height="261dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002">
+
+        <TextView
+            android:id="@+id/tvSelect"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:text="Select Testing Method : "
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbtnA1C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A1C Test" />
+
+        <RadioButton
+            android:id="@+id/rbtnFBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fasting Blood Sugar Test" />
+
+        <RadioButton
+            android:id="@+id/rbtnGT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glicose Tolerance Test" />
+
+        <RadioButton
+            android:id="@+id/rbtnRBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random Blood Sugar Test" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="358dp"
+        android:layout_height="45dp"
+        android:text="Diabetes Tests"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="369dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:text="Enter Test Result : "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSelection" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="369dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:text="CALCULATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValue" />
+
+    <EditText
+        android:id="@+id/etValue"
+        android:layout_width="369dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Enter Percentage or Blood Sugar level"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
